@@ -1,0 +1,10 @@
+[
+  {
+    "role": "user",
+    "content": "What is RAG?"
+  },
+  {
+    "role": "assistant",
+    "content": "Retrieval-Augmented Generation."
+  }
+]

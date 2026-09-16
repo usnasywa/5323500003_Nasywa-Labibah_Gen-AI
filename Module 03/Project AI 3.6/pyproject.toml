@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "my-ai-project"
+version = "0.1.0"
+description = "AI Habit Coach - RAG untuk analisis dan rekomendasi kebiasaan belajar mahasiswa"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "langchain",
+    "langchain-google-genai",
+    "chromadb",
+    "python-dotenv",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["my_ai_project"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.mypy]
+python_version = "3.10"
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
