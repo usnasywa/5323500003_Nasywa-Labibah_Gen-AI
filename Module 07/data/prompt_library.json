@@ -1,0 +1,16 @@
+{
+  "templates": {
+    "qa": {
+      "name": "qa",
+      "system": "You are a {domain} expert.",
+      "user": "Question: {question}",
+      "version": "1.0"
+    }
+  },
+  "last_eval": {
+    "qa": {
+      "version": "1.0",
+      "pass_rate": 0.8
+    }
+  }
+}
